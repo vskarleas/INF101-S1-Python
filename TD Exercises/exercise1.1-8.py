@@ -1,0 +1,5 @@
+print("Largeur ?")
+lar = int(input())
+print("Longeur ?")
+lon = int(input())
+print("L'aire du rectangle de largeur", lar, "et de longeur", lon, "vaut", lar * lon, sep=" ")

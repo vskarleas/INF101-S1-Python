@@ -1,0 +1,5 @@
+print("ecrire ton prenom")
+pre = str(input())
+print("ecrire ton nom")
+nom = str(input())
+print("Identite:", pre, nom, sep=" ")
