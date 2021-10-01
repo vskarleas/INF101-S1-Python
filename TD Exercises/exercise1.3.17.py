@@ -47,7 +47,7 @@ for keepLines in range (1, keepLines+1):
     figureE = figureE - 1
 print("----------")
 print("Figure F")
-for keepLines in range (1, keepLines):
+for keepLinesg in range (1, keepLines):
     klrk = ('*' * figureF)
     spaceF = (' ' * spacesF)
     print(f"{spaceF}{klrk}{spaceF}")
