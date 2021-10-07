@@ -1,10 +1,8 @@
 
-x = int(input("Nombre max de lettres ?"))
+x = int(input("Nombre max de lettres ? "))
 play = 1
-letters = str()
-if x == 0:
-    exit()
-else:
+letters = ""
+if x > 0:
     letter = str(input("Lettre :"))
     while play < x:
         if letter == "stop":
@@ -13,9 +11,12 @@ else:
             letters = letters + letter
             letter = str(input("Lettre :"))
             play = play + 1
-    letters = letters + letter
+    if letter != "stop":
+        letters = letters + letter
     if letters == "0":
         exit()
     else:
         print(letters)
+if x == 0:
+     exit()
     
