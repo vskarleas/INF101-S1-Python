@@ -1,0 +1,6 @@
+note1 = float(input("Donner note1: "))
+note2 = float(input("Donner note2: "))
+coeff1 = int(input("Coefficinet 1: "))
+coeff2 = int(input("coefficient 2: "))
+moyenne = ((note1*coeff1)+(note2*coeff2))//(coeff1+coeff2)
+print("Moyenne ponderee est ", moyenne)
