@@ -1,3 +1,4 @@
+#There is also a much more simple way
 def alpha(word):
     caracter = "0"
     counter = 1
