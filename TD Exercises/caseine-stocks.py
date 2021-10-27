@@ -9,7 +9,7 @@ while x > 0:
         x = -1
     elif add == "a":
         n = int(input("Choisissez une semaine : "))
-        kappa = n + 20
+        
         dar = 1024
         lam = (n+2) - n
         print("Semaine 1:", dar)
@@ -29,7 +29,7 @@ while x > 0:
         x = x + 1
     elif add == "b":
         n = int(input("Choisissez une semaine : "))
-        kappa = n + 20
+        
         dar = 1024
         lam = (n+2) - n
         maximum = 0

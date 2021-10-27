@@ -29,7 +29,7 @@ def LireListeReelsBornes(bmin=0, bmax=100):
         else:
             liste_2.pop()
             h = -1
-    liste_2.sort()
+    #With this one, it doesn't work liste_2.sort()
     return liste_2
 
 def MMSListe(liste_3):
