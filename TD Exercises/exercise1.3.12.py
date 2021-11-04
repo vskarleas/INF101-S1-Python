@@ -11,9 +11,10 @@ while play > 1:
         while i < n and (n%i) != 0:
             i = i + 1
         if i == n:
-            omr = 200
+            omr = 200 #This is an ID for success response 
         else:
-            omr = 250
+            omr = 250 #This is an ID for wrong response 
+        
         if omr == 200 :
             print("The number", n, "is premier")
             print("Do you want to play again ?")

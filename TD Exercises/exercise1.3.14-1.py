@@ -1,7 +1,5 @@
 n = int(input("Add a number:"))
 choising = "yes"
-a = 0
-b = 1
 while choising == "yes":
     a = 0
     b = 1

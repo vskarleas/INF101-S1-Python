@@ -1,3 +1,4 @@
+#This is wwrong
 n = int(input("Give a number n:"))
 pyramide = 7
 spacing = 0

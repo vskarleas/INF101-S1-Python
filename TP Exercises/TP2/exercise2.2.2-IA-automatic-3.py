@@ -2,7 +2,7 @@ import random
 print("IA aleartoire")
 n = int(input("How many times to play ?"))
 mql = int(input("How many times to try in a single play ?"))
-if 0 < n < 10000:
+if 0 < n < 10**300:
     win=0
     lose=0
     restart = 1

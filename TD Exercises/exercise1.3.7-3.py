@@ -1,7 +1,7 @@
 print("Somme des n nombres lus au clavier")
 somme = 0 
 n = 0
-times = int(input("How many numbers do you wan tto claculate ?"))
+times = int(input("How many numbers do you want to claculate ?"))
 if times < 0:
     print("It's impossible to calculate the somme of", times, "numbers")
 else:

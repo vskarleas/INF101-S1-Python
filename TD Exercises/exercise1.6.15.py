@@ -13,7 +13,7 @@ def decalage(x, n):
     if (x not in liste1) and (x not in liste2):
         return x
 
-    #We are using th emodulo so that we can move on in the "list of letters masculins or not".
+    #We are using the modulo so that we can move on in the "list of letters masculins or not".
     elif ord(x)+n>ord("z"):
         return (ord(x)+n)%ord("z")+ord("a")
 
@@ -23,7 +23,7 @@ def decalage(x, n):
 def decal_list(l, n):
     l2=[]
     for i in l:
-        x = i
+        x = i #Maybe l[i]
         l2.append(decalage(x, n))
     return l2
 

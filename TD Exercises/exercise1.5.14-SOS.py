@@ -16,9 +16,9 @@ def alpha(word):
                     break
             else:
                 word = input("Donner un mot:")
-                repeat = repeat + 1
+                repeat = repeat + 1 
         if word == "stop":
-            print("Program is ended") #we can add also break 
+            print(counter-1) #we can add also break 
         repeat = 0
 
 word = input("Donner un mot:")
