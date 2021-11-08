@@ -11,7 +11,7 @@ while x > 0:
         n = int(input("Choisissez une semaine : "))
         
         dar = 1024
-        lam = (n+2) - n
+        lam = 2
         print("Semaine 1:", dar)
         while lam <= n:
             if (lam % 4) == 0:
@@ -31,7 +31,7 @@ while x > 0:
         n = int(input("Choisissez une semaine : "))
         
         dar = 1024
-        lam = (n+2) - n
+        lam = 2
         maximum = 0
         semaine = 0
         while lam <= n:
@@ -57,5 +57,3 @@ while x > 0:
         x = x + 1
     else:
         add = str(input("Choix incorrect, recommencez "))
-            
-            

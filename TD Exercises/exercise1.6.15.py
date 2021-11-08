@@ -5,6 +5,7 @@ def decalage(x, n):
     #accepted on the exams as well
     for i in range(ord("a"), ord("z")+1):
         liste1.append(chr(i))
+    print(liste1)
 
     liste2=[]
     for k in range(ord("A"), ord("Z")+1):

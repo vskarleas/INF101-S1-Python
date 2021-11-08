@@ -8,3 +8,5 @@ def palindrome(x):
 
 x = input("Give a word: ")
 print(palindrome(x))
+
+
