@@ -23,14 +23,8 @@ print(cardsDeck())
 abdel:question 1 (project)
 import random
 
-
 nombres=[2,3,4,5,6,7,8,9,10,"roi","dame","valet"]
 couleur=["pique", "trèfle","coeur","carreau"]
-
-
-
-
-
 
 def paquet():
         k=str(random.choice(nombres))
