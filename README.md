@@ -5,17 +5,17 @@ This repository include all the exercises for the course INF101 "Algorithmique e
 The course is divided in CM, TD and TP courses. On the folders you will find TD exercises and TP exercises. Just click on every folder and you will find the solved exercises and a PDF with the exercises requests. 
 
 ## Cours
-- 1.1 Some definitions
-- 1.2 Variables, expressions, instructions,
-- 1.3 Useful tools
-- 1.4 Entries / Exits
-- 1.5 Booleans expressions
-- 1.6 "if" conditional instructions
-- 1.7 "while" condition
-- 1.8 The functions
-- 1.9 Chareacters' channels
-- 1.10 Lists
-- 1.11 Unconditional loop
+- 1.1 Some definitions (done)
+- 1.2 Variables, expressions, instructions, (done)
+- 1.3 Useful tools (done)
+- 1.4 Entries / Exits (done)
+- 1.5 Booleans expressions (done)
+- 1.6 "if" conditional instructions (done)
+- 1.7 "while" condition (done)
+- 1.8 The functions (done)
+- 1.9 Chareacters' channels (done)
+- 1.10 Lists (done)
+- 1.11 Unconditional loop (done)
 - 1.12 Advanced lists
 - 1.13 Dictionaries
 - 1.14 Introduction to files
