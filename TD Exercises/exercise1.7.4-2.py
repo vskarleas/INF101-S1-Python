@@ -1,7 +1,7 @@
 def function(liste):
     first = liste[0]
     for i in range(1, len(liste)):
-        if liste[i] > first:
+        if liste[i] >= first:
             first = liste[i]
         else:
             return False
@@ -10,7 +10,7 @@ def function(liste):
 def function_dec(liste):
     first = liste[0]
     for i in range(1, len(liste)):
-        if liste[i] < first:
+        if liste[i] <= first:
             first = liste[i]
         else:
             return False
