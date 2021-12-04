@@ -1,5 +1,5 @@
-poly = {6:1, 2:3, 1:0, 5:2} #Key is the puissance and the value is the factor of the x
-poly2 = {5:2, 4:3}
+poly = {6:1, 2:3, 5:2} #Key is the puissance and the value is the factor of the x
+poly2 = {5:2}
 from copy import *
 
 def lire(n):
@@ -41,15 +41,27 @@ def afficheTwo(poly):
     print(poly[k], "*x^", k,"+", sep="", end="")
 
 def somme_polynomes(poly, poly2):
-    newPoly = {}
-    newPoly.update(poly.items())
-    newPoly.update(poly2.items())
+    newPoly = deepcopy(poly)
+    for coeff in poly2:
+        if coeff in newPoly:
+            newPoly[coeff] = newPoly[coeff] + poly2[coeff]
+        else:
+            newPoly[coeff] = poly2[coeff]
     return newPoly
 
-def somme_polynomesTwo(poly, poly2):
-    F1= dict(poly)
-    F2 = dict(poly2)
-    somme = F1+F2
-    return somme
+def produit_polynomes(poly, poly2):
+    newPoly = {}
+    for key, value in poly.items():
+        for key2, value2 in poly2.items():
+            newPoly[key2+key]=value2*value
+    return newPoly
 
-print(somme_polynomesTwo(poly, poly2))
+def derivee_polynome(poly):
+    derivee = {}
+    for key, value in poly.items():
+        if key!=0:
+            derivee[key-1]=key*value
+    return derivee
+
+
+print(produit_polynomes(poly, poly2))
