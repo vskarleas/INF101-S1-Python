@@ -1,12 +1,11 @@
 def function(lm, c):
     liste = []
     for i in range(len(lm)):
-        length = len(lm[i])
+        length = len(lm[i]) #Length of of the word from below!
         word = lm[i]
         if word[length-1] == c:
             liste.append(word)
     return liste
-
 
 def function2(lm, c):
     liste = []
@@ -38,7 +37,6 @@ def function5(lm, c, n):
             liste.append(lm[i])
     return liste
 
-
 def function3(lm, c, a):
     #True for beginning letter
     #False for last letter
@@ -47,14 +45,9 @@ def function3(lm, c, a):
         liste = function2(lm, c)
     else:
         liste = function(lm, c)
-    
     return liste
-
 lm = ["hello", "new", "hoho"]
 c = "a"
 a= False
 n = 2
 print(function5(lm, c, n))
-
-
-        

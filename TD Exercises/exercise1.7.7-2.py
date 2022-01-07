@@ -5,5 +5,5 @@ def puissance(n, a):
     return res
 
 n = -2
-a = 5
+a = 2
 print(puissance(n, a))

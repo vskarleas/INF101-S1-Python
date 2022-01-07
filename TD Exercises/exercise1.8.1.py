@@ -28,8 +28,34 @@ def function3():
             repeat = False
     return liste
 
+def function3Corrected():
+    liste = []
+    repeat = True
+    firstNumber = int(input("Add number: "))
+    liste.append(firstNumber)
+    if firstNumber != -1:
+        while repeat == True:
+            x = int(input("Add number: "))
+            if x == -1:
+                repeat = False
+            else:
+                repeater = True
+                while repeater == True:
+                    if x == (firstNumber +1):
+                        liste.append(x)
+                        firstNumber = x
+                        repeater = False
+                    else:
+                        print("You need to add the number one by one. Th eprevious number is ",firstNumber,". Try again beow.")
+                        x = int(input("Add number: "))
+                        repeater = True
+        return liste
+    else:
+        return liste
+
+
 #Main program
-liste = function3()
+liste = function3Corrected()
 melange = function(liste)
 position = function2(liste, melange)
 counter = 1
@@ -38,4 +64,3 @@ while position != 0:
     position = function2(liste, melange)
     counter = counter +1
 print(counter)
-

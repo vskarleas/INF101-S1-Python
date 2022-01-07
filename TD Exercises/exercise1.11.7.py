@@ -1,5 +1,5 @@
-poly = {6:1, 2:3, 5:2} #Key is the puissance and the value is the factor of the x
-poly2 = {5:2}
+poly = {2:1, 4:3, 0:-3} #Key is the puissance and the value is the factor of the x
+poly2 = {3:4, 4:8, 7:3}
 from copy import *
 
 def lire(n):
@@ -18,21 +18,35 @@ def evaluer(poly, x):
     return sum
 
 def simplifier(poly): #Υπάρχει ένα θέμα εδώ. Θα το ξανακάνω με το αξαπητό μου deepcopy
-    liste = []#We can do this and with deepcopy as well
+    newdico = {}
     for key, value in poly.items():
         if value == 0:
-            liste.append(key)
-    for i in range(len(liste)):
-        poly.pop(key)
+            newdico.update({key: value})
+
+    for newKey, newValue in newdico.items():
+        poly.pop(newKey)
     return poly
 
 def affiche(poly):
     liste = []
-    for k, v in poly.items():
-        affiche = str()
-        affiche = str(v) +"x^" + str(k)
+    finalListe = []
+    simplified = simplifier(poly)
+    for k, v in simplified.items():
+        if k == 0:
+            affiche = str(v)
+        elif k == 1:
+            affiche = str(v) +"x"
+        else:
+            affiche = str(v) +"x^" + str(k)
         liste.append(affiche)
-    print(*liste, sep="+")
+    finalListe.append(liste[0])
+    for l in range(1,len(liste)):
+        if liste[l][0] == "-":
+            finalListe.append(liste[l])
+        else:
+            demo = "+" + liste[l]
+            finalListe.append(demo)
+    print(*finalListe, sep="")
 
 def afficheTwo(poly):
     for k in (poly.keys())[:-1]:
@@ -42,7 +56,7 @@ def afficheTwo(poly):
 
 def somme_polynomes(poly, poly2):
     newPoly = deepcopy(poly)
-    for coeff in poly2:
+    for coeff in poly2: #every key of poly2
         if coeff in newPoly:
             newPoly[coeff] = newPoly[coeff] + poly2[coeff]
         else:
@@ -65,3 +79,7 @@ def derivee_polynome(poly):
 
 
 print(produit_polynomes(poly, poly2))
+print(poly)
+print(simplifier(poly))
+affiche(poly)
+print(somme_polynomes(poly, poly2))

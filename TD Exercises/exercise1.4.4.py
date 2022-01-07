@@ -4,7 +4,7 @@ def dates(a, b, c):
     kim = 31 - a
     result = month(b)
     results = result - a
-    if (kappa>=0 or lam>=0 or kim>=0) and results == kim:
+    if kappa>=0 and lam>=0 and kim>=0 and results == kim:
         print(a,"/",b,"/",c," est correct")
     else:
         print(a,"/",b,"/",c," n'est pas correct")

@@ -1,18 +1,18 @@
 def compteNotes(dictionary, name):
     for key, value in dictionary.items():
         if name == key:
-            return value
+            return len(value)
 
 def meileurNote(dictionary, name):
-    notes = compteNotes(dictionary, name)
-    top = max(notes)
-    return top
+    for key, value in dictionary.items():
+        if name == key:
+            best = max(value)
+    return best
 
 def meileurSemestre(dictionary):
     newDictionary = {}
     data = []
     notes = []
-    name = ""
     for key, value in dictionary.items():
         final = 0
         for i in range(len(value)):
@@ -49,13 +49,8 @@ def maileurSemestre2(dictionary):
 def plusAbsent(dictionary):
     absent = 730
     name = ""
-    for k in dictionary:
+    for k in dictionary: #k represents the different keys of the dictionary (key = student name)
         if len(dictionary[k]) < absent:
             absent = len(dictionary[k])
             name = k
     return name, absent
-
-
-
-        
-

@@ -20,6 +20,5 @@ def alpha(word):
         if word == "stop":
             print(counter-1) #we can add also break 
         repeat = 0
-
 word = input("Donner un mot:")
 alpha(word)

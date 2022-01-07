@@ -10,4 +10,4 @@ else:
         number = float(input())
         somme = somme + number
         n = n + 1
-    print("The somme of the", n, "numbers that you added is:", somme) 
+    print("The somme of the", n, "numbers that you added is:", int(somme)) 

@@ -28,4 +28,4 @@ print(function(liste, x))
 print(function3(liste, x))
 print(function2(liste, x))
 
-#Exercise 5, 6, 7 are coming soon!!
+#Exercise 5, 6, 7 on a paper
