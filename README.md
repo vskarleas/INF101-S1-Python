@@ -19,3 +19,9 @@ The course is divided in CM, TD and TP courses. On the folders you will find TD 
 - 1.12 Advanced lists
 - 1.13 Dictionaries
 - 1.14 Introduction to files
+
+---
+
+### License Information
+
+**PeiP-S1-INF101-Python_introduction** © includes content that is not the property of **Vasileios Filippos Skarleas** and is subject to copyright and other licenses from their respective owners.
