@@ -24,4 +24,4 @@ The course is divided in CM, TD and TP courses. On the folders you will find TD 
 
 ### License Information
 
-**PeiP-S1-INF101-Python_introduction** © includes content that is not the property of **Vasileios Filippos Skarleas** and is subject to copyright and other licenses from their respective owners.
+**PeiP-S1-INF101** © includes content that is not the property of **Vasileios Filippos Skarleas** and is subject to copyright and other licenses from their respective owners.
